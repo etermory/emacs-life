@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title></title>
+<!-- 2018-07-26 목 10:04 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="Hupyeong Lee">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-9"><h1 class="title"></h1>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">2018-06-14</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+영역을 선택하여 내용을 재구성하는 작업은 문서 편집 과정에서 빈번하게 발생한다.
+보통 넓은 영역을 직관적으로 선택하는데 마우스 사용이 편하기도 하지만 공백이나
+글자의 경계에서는 키보드 사용이 훨씬 편리하고, 선택할 영역의 시작이나 끝에
+커서가 있는 경우에도 마우스로 손을 옮기는 행위가 번거롭게 느껴진다. 이맥스도
+Shift 키와의 조합으로 영역 선택이 가능하지만, 마크를 지정하는 명령인 C-SPC 를
+시작으로 이맥스의 이동 명령을 통해 선택 영역을 확장하는 방법을 주로 사용한다.
+이맥스에서는 커서가 있는 위치의 왼쪽 경계를 포인트라 부르는데, 마크와 포인트의
+위치는 C-x C-x 명령을 통해 서로 바꿀 수 있다. 마크 지정 명령을 두 번 반복하면
+포인트 위치에 마크가 지정된 후 선택 작업이 취소된다. 지정했던 마크들은 모두
+마크 스택에 저장되며 C-u C-SPC 명령을 통해 마크 스택에서 꺼낸 뒤 해당 위치로
+포인트를 옮길 수 있다.
+문서 전체를 선택할 때에는 C-x h 명령을 사용하면 되고, 포인트가 속한 문단을
+영역으로 잡을 때에는 M-h 명령을 사용하면 된다. 이 경우 포인트는 영역 시작으로
+이동하고, 끝부분에 마크가 설정된다. 영역 선택 전 포인트에서 마크를 스택에 미리
+넣어두면 명령 취소시 포인트를 이전 상태로 돌리는데 사용할 수 있다.
+</p>
+
+<p>
+윈도우에서 버퍼를 스크롤하는 편리한 방법 하나는 C-l 명령이다. 편집 중 처음 이
+명령에 대해서는 포인트가 있는 줄이 윈도우의 중앙에 위치하게 해주는데, 명령을
+반복하면 그 줄이 상단, 하단에 올 수 있게 버퍼를 그려준다. 이전 상태로 되돌려
+주지는 않는다. 윈도우 위 아래로 버퍼를 움직이는 명령은 C-v, M-v 이다. 잘 보면
+어느 방향으로 움직이더라도 그 방향의 두 번째 줄까지는 스크롤 후에도 확인할 수
+있다. 버퍼의 시작과 끝으로 포인트를 옮기기 위해서는 M-&lt;, M-&gt; 명령을 사용하면
+된다.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">오늘의 명령 모음</h3>
+<div class="outline-text-3" id="text-1-1">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left">Key</th>
+<th scope="col" class="text-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">C-SPC</td>
+<td class="text-left">set-mark-command</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x C-x</td>
+<td class="text-left">exchange-point-and-mark</td>
+</tr>
+
+<tr>
+<td class="text-left">C-u C-SPC</td>
+<td class="text-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x h</td>
+<td class="text-left">mark-whole-buffer</td>
+</tr>
+
+<tr>
+<td class="text-left">M-h</td>
+<td class="text-left">mark-paragraph</td>
+</tr>
+
+<tr>
+<td class="text-left">C-l</td>
+<td class="text-left">recenter-top-bottom</td>
+</tr>
+
+<tr>
+<td class="text-left">C-v</td>
+<td class="text-left">scroll-up-command</td>
+</tr>
+
+<tr>
+<td class="text-left">M-v</td>
+<td class="text-left">scroll-down-command</td>
+</tr>
+
+<tr>
+<td class="text-left">M-&lt;</td>
+<td class="text-left">beginning-of-buffer</td>
+</tr>
+
+<tr>
+<td class="text-left">M-&gt;</td>
+<td class="text-left">end-of-buffer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div><div class="col-md-3"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-1">2018-06-14</a>
+<ul class="nav">
+<li><a href="#sec-1-1">오늘의 명령 모음</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div></div></div>
+<footer id="postamble" class="">
+<div><p class="author">Author: Hupyeong Lee</p>
+<p class="date">Created: 2018-07-26 목 10:04</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="http://orgmode.org">Org-mode</a> 9.1.9)</p>
+</div>
+</footer>
+</body>
+</html>

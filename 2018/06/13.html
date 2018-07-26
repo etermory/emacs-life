@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title></title>
+<!-- 2018-07-26 목 10:04 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="Hupyeong Lee">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-9"><h1 class="title"></h1>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">2018-06-13</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+편집기로 내용 작성을 어느정도 하다보면 같은 줄의 시작과 끝으로 이동하는 경우가
+빈번하게 발생한다. 이맥스는 Home, End 키를 사용해도 의도한 동작을 실행하지만
+C-a, C-e 명령에 익숙해지면 손가락의 이동을 크게 하지 않고도 같은 결과를 볼 수
+있다. 줄의 시작부에서 공백이 아닌 문자가 처음 입력된 위치로 가는 명령인 M-m도
+있기 때문에 경우에 따라 원하는 행위를 구분지을 수 있다. 커서를 옮기는 작업이
+때로는 단어 또는 단어를 구성하는 특정 문자 위치로의 이동에서 기인하는데, 단어
+단위의 이동은 M-f, M-b 명령을 사용하면 된다. 유사하게 C-b, C-f 명령은 좌우
+화살표 키와 같은 동작을 하며, C-p, C-n 명령은 상하 화살표 키와 같다. 오타
+수정이나 내용 변경을 위한 목적으로 커서를 이동하였다면 이때 단어 단위의 삭제
+명령인 M-DEL, M-d 를 사용하면 된다. C-d 명령으로 커서 위의 글자를 지울 수도
+있다. 커서가 있는 줄에서 커서 뒤의 모든 내용을 지우고 싶을 때에는 C-k 명령을
+입력하면 된다.
+</p>
+
+<p>
+이맥스는 프레임' 안의 '윈도우'를 통해 '버퍼'를 보여주는 편집기이다. 요즘의
+많은 편집기들이 보여주는 탭의 기능은 윈도우를 추가하거나 버퍼를 변경해주는
+방식으로 대체할 수 있다. C-x 2, C-x 3 명령을 통해 윈도우를 수평 또는 수직으로
+나눌 수 있으며, C-x o 명령으로 윈도우들을 순회한다. 커서가 있는 윈도우를 닫을
+때는 C-x 0, 반대로 커서가 있는 윈도우만 제외하고 모두 닫을 때는 C-x 1 명령을
+사용한다. 실수로 ESC를 세 번 연타하면 나머지 창이 모두 닫힌다.
+윈도우에 보여줄 버퍼를 변경하는 명령은 C-x b 이다. 버퍼의 이름은 TAB 키를 통해
+자동완성을 할 수 있으며, 아무 것도 입력하지 않은 상태에서 TAB 키를 누른 경우
+버퍼 목록을 확인할 수 있다. 대안 목록에서의 대상 이동에 사용하는 M-n, M-p
+명령은 버퍼 이름을 입력하는데도 유용하게 사용할 수 있다. 버퍼 선택 작업의
+취소는 C-g 명령으로 할 수 있으며, 이 명령은 이맥스에서 어떤 상황에서도 취소로
+동작한다.
+편집이 끝났거나 필요가 없어서 버퍼를 닫길 원할 때 사용하는 명령은 C-x k 이다.
+선택된 버퍼는 내용 변경 여부에 따라 저장하지 않고 닫을 것인지를 물어본다.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">오늘의 명령 모음</h3>
+<div class="outline-text-3" id="text-1-1">
+<table class="table table-striped table-bordered table-hover table-condensed">
+
+
+<colgroup>
+<col  class="left">
+
+<col  class="left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="text-left">Key</th>
+<th scope="col" class="text-left">Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-left">C-a</td>
+<td class="text-left">move-beginning-of line</td>
+</tr>
+
+<tr>
+<td class="text-left">C-e</td>
+<td class="text-left">move-end-of-line</td>
+</tr>
+
+<tr>
+<td class="text-left">M-m</td>
+<td class="text-left">back-to-indentation</td>
+</tr>
+
+<tr>
+<td class="text-left">M-f</td>
+<td class="text-left">forward-word</td>
+</tr>
+
+<tr>
+<td class="text-left">M-b</td>
+<td class="text-left">backward-word</td>
+</tr>
+
+<tr>
+<td class="text-left">C-f</td>
+<td class="text-left">forward-char</td>
+</tr>
+
+<tr>
+<td class="text-left">C-b</td>
+<td class="text-left">backward-char</td>
+</tr>
+
+<tr>
+<td class="text-left">C-n</td>
+<td class="text-left">next-line</td>
+</tr>
+
+<tr>
+<td class="text-left">C-p</td>
+<td class="text-left">previous-line</td>
+</tr>
+
+<tr>
+<td class="text-left">M-DEL</td>
+<td class="text-left">backward-kill-word</td>
+</tr>
+
+<tr>
+<td class="text-left">M-d</td>
+<td class="text-left">kill-word</td>
+</tr>
+
+<tr>
+<td class="text-left">C-d</td>
+<td class="text-left">delete-char</td>
+</tr>
+
+<tr>
+<td class="text-left">C-k</td>
+<td class="text-left">kill-line</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x 2</td>
+<td class="text-left">split-window-below</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x 3</td>
+<td class="text-left">split-window-right</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x o</td>
+<td class="text-left">other-window</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x 0</td>
+<td class="text-left">delete-window</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x 1</td>
+<td class="text-left">delete-other-windows</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x b</td>
+<td class="text-left">switch-to-buffer</td>
+</tr>
+
+<tr>
+<td class="text-left">M-n</td>
+<td class="text-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="text-left">M-p</td>
+<td class="text-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="text-left">C-g</td>
+<td class="text-left">keyboard-quit</td>
+</tr>
+
+<tr>
+<td class="text-left">C-x k</td>
+<td class="text-left">kill-buffer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div><div class="col-md-3"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-1">2018-06-13</a>
+<ul class="nav">
+<li><a href="#sec-1-1">오늘의 명령 모음</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</div></div></div>
+<footer id="postamble" class="">
+<div><p class="author">Author: Hupyeong Lee</p>
+<p class="date">Created: 2018-07-26 목 10:04</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.1 (<a href="http://orgmode.org">Org-mode</a> 9.1.9)</p>
+</div>
+</footer>
+</body>
+</html>
